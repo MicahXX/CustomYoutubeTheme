@@ -9,6 +9,10 @@
         animation: fadeIn 0.8s ease-in; /* Page fade-in animation */
     }
 
+    ytd-app {
+        background-color: #111a2b !important;
+    }
+
     /* Page */
     #contents,
     #container,
