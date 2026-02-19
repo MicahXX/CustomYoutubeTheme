@@ -1,0 +1,47 @@
+<style type="text/css">
+
+	    html, body,
+	    ytd-app {
+	        background-color: #0b1220 !important; /* Change this color, default: dark-blue */
+	    }
+
+
+	    #contents,
+	    #container,
+	    #sections,
+	    #secondary,
+	    #columns,
+	    #playlist-items {
+	        background-color: #111a2b !important; /* Change this color, default: dark-blue */
+	        box-shadow: none !important;
+	    }
+
+	    #chips-content {
+	        background-color: #0f172a !important; /* Change this color, default: dark-blue */
+	        padding: 4px 0 !important;
+	    }
+
+	    #ytSearchboxComponentInputContainer {
+	        background-color: #1a2335 !important;
+	        border-radius: 8px !important;
+	    }
+
+	    .ytChipShapeChip {
+	        border-radius: 8px !important;
+	        padding: 6px 14px !important;
+	        background-color: #1e3a8a !important; /* Change this color, default: light-blue */
+	        color: #e0e7ff !important;
+	        transition: all 0.2s ease;
+	        border: 1px solid #2563eb !important;
+	    }
+
+	    yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
+	        background-color: #2563eb !important;
+	        box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important; /* Change this color, default: dark-blue */
+	    }
+
+	    .ytChipShapeChip:hover {
+	        background-color: #1d4ed8 !important; /* Change this color, default: blue */
+	    }
+
+</style>
