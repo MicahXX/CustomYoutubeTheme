@@ -1,8 +1,8 @@
 <style type="text/css">
 
     html, body,
-    ytd-app {
-        background-color: #0b1220 !important; /* Main background color (dark-blue). You can change this */
+    ytd-mini-guide-renderer {
+        background-color: #0e1624 !important; /* Main background color (dark-blue). You can change this */
         color: #e0e7ff !important; /* Main text color (light-blue). Change as you like */
         font-family: 'Segoe UI', Roboto, sans-serif !important;
         transition: background-color 0.3s ease, color 0.3s ease;
@@ -22,6 +22,7 @@
         transition: all 0.3s ease;
     }
 
+    /* making small changes to improve looks */
     #text-container {
         background-color: #ffffff !important;
     }
@@ -40,7 +41,20 @@
         background-color: #111a2b !important;
     }
 
+    #sections {
+        border-radius: 0 !important;
+        background-color: #0e1624 !important; /* Looks good */
+    }
+
+    #playlist-items {
+        border-radius: 0 !important;
+    }
+
     /* Chips */
+    #chips {
+        padding-left: 1rem;
+    }
+
     #chips-content {
         background-color: #0f172a !important; /* Chips background (slightly darker blue) */
         padding: 4px 0 !important;
