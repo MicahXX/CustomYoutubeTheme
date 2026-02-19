@@ -22,6 +22,10 @@
         transition: all 0.3s ease;
     }
 
+    #text-container {
+        background-color: #ffffff !important;
+    }
+
     /* I think this looks good */
     #secondary {
         margin: 0 !important;
