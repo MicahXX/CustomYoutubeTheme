@@ -86,7 +86,7 @@
     ytd-video-renderer:hover,
     ytd-grid-video-renderer:hover {
         transform: scale(1.03);
-        box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
+        /* box-shadow: 0 0 12px rgba(37, 99, 235, 0.5); buggy */
     }
 
     /* Hide Ads */
