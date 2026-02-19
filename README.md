@@ -1,9 +1,13 @@
-Use a tool that allows you to inject custom CSS into websites, such as Requestly.
+# YouTube Custom CSS Theme
 
-Create a new rule and set the condition type to URL, Contains (this is important because when you click on a video,
-YouTube dynamically redirects to a different page).
+Use a tool that lets you inject custom CSS into websites, like [Requestly](https://www.requestly.io/).
 
-In the URL field, enter: https://www.youtube.com/
+1. Create a **New Rule**, set **URL and set Contains**.  
 
-This is just a very basic theme example — you can customize and expand it as much as you want.
-Feel free to modify the styles, add new elements, or completely redesign the layout to match your own aesthetic.
+2. In the URL field, enter: `https://www.youtube.com/`
+
+3. Open Youtube or reload tab.
+
+4. And if you did everything correct Youtube should look different now.
+
+This is a basic theme example, you can tweak colors, add new styles, or completely redesign the layout to fit your own look. (:
