@@ -29,6 +29,13 @@
         border-radius: 0 !important;
     }
 
+    #page-header-banner,
+    #page-header,
+    #tabs-inner-container {
+        border-radius: 0 !important;
+        background-color: #111a2b !important;
+    }
+
     /* Chips */
     #chips-content {
         background-color: #0f172a !important; /* Chips background (slightly darker blue) */
