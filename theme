@@ -22,6 +22,13 @@
         transition: all 0.3s ease;
     }
 
+    /* I think this looks good */
+    #secondary {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important; #
+    }
+
     /* Chips */
     #chips-content {
         background-color: #0f172a !important; /* Chips background (slightly darker blue) */
