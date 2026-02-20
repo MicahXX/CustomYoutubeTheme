@@ -43,6 +43,7 @@
       border-radius: 0 !important;
   }
 
+  #container,
   #page-header-banner,
   #page-header,
   #tabs-inner-container,
