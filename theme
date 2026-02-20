@@ -1,148 +1,147 @@
 <style type="text/css">
+  html, body,
+  ytd-mini-guide-renderer {
+      background-color: #0e1624 !important; /* Main background color (dark-blue). You can change this */
+      color: #e0e7ff !important; /* Main text color (light-blue). Change as you like */
+      font-family: 'Segoe UI', Roboto, sans-serif !important;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      animation: fadeIn 0.8s ease-in; /* Page fade-in animation */
+  }
 
-    html, body,
-    ytd-mini-guide-renderer {
-        background-color: #0e1624 !important; /* Main background color (dark-blue). You can change this */
-        color: #e0e7ff !important; /* Main text color (light-blue). Change as you like */
-        font-family: 'Segoe UI', Roboto, sans-serif !important;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        animation: fadeIn 0.8s ease-in; /* Page fade-in animation */
-    }
+  ytd-app {
+      background-color: #111a2b !important;
+  }
 
-    ytd-app {
-        background-color: #111a2b !important;
-    }
+  yt-formatted-string[has-link-only_]:not([force-default-style])
+  a.yt-simple-endpoint.yt-formatted-string {
+      background-color: #0e1624 !important;
+      border: none;
+  }
 
-    yt-formatted-string[has-link-only_]:not([force-default-style])
-    a.yt-simple-endpoint.yt-formatted-string {
-        background-color: #0e1624 !important;
-        border: none;
-    }
+  /* Page */
+  #contents,
+  #container,
+  #sections,
+  #secondary,
+  #columns,
+  #playlist-items {
+      background-color: #111a2b !important; /* Container background (dark-grayish-blue) */
+      box-shadow: none !important;
+      border-radius: 8px; /* Rounded corners */
+      transition: all 0.3s ease;
+  }
 
-    /* Page */
-    #contents,
-    #container,
-    #sections,
-    #secondary,
-    #columns,
-    #playlist-items {
-        background-color: #111a2b !important; /* Container background (dark-grayish-blue) */
-        box-shadow: none !important;
-        border-radius: 8px; /* Rounded corners */
-        transition: all 0.3s ease;
-    }
+  /* making small changes to improve looks */
+  #text-container {
+      background-color: #ffffff !important;
+  }
 
-    /* making small changes to improve looks */
-    #text-container {
-        background-color: #ffffff !important;
-    }
+  /* I think this looks good */
+  #secondary {
+      margin: 0 !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+  }
 
-    /* I think this looks good */
-    #secondary {
-        margin: 0 !important;
-        padding: 0 !important;
-        border-radius: 0 !important;
-    }
+  #page-header-banner,
+  #page-header,
+  #tabs-inner-container,
+  #header {
+      border-radius: 0 !important;
+      background-color: #111a2b !important;
+  }
 
-    #page-header-banner,
-    #page-header,
-    #tabs-inner-container,
-    #header {
-        border-radius: 0 !important;
-        background-color: #111a2b !important;
-    }
+  #sections {
+      border-radius: 0 !important;
+      background-color: #0e1624 !important; /* Looks good */
+  }
 
-    #sections {
-        border-radius: 0 !important;
-        background-color: #0e1624 !important; /* Looks good */
-    }
+  #playlist-items {
+      border-radius: 0 !important;
+  }
 
-    #playlist-items {
-        border-radius: 0 !important;
-    }
+  /* Chips */
+  #chips {
+      padding-left: 1rem;
+  }
 
-    /* Chips */
-    #chips {
-        padding-left: 1rem;
-    }
+  #chips-content {
+      background-color: #0f172a !important; /* Chips background (slightly darker blue) */
+      padding: 4px 0 !important;
+  }
 
-    #chips-content {
-        background-color: #0f172a !important; /* Chips background (slightly darker blue) */
-        padding: 4px 0 !important;
-    }
+  /* Chips */
+  .ytChipShapeChip {
+      border-radius: 8px !important;
+      padding: 6px 14px !important;
+      background-color: #1e3a8a !important; /* Default chip color (blue) */
+      color: #e0e7ff !important; /* Chip text color */
+      border: 1px solid #2563eb !important; /* Chip border color */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: popIn 0.5s ease; /* Pop-in animation */
+  }
 
-    /* Chips */
-    .ytChipShapeChip {
-        border-radius: 8px !important;
-        padding: 6px 14px !important;
-        background-color: #1e3a8a !important; /* Default chip color (blue) */
-        color: #e0e7ff !important; /* Chip text color */
-        border: 1px solid #2563eb !important; /* Chip border color */
-        cursor: pointer;
-        transition: all 0.3s ease;
-        animation: popIn 0.5s ease; /* Pop-in animation */
-    }
+  /* Selected Chip */
+  yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
+      background-color: #2563eb !important; /* Selected chip color */
+      box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important; /* Glow effect on selection */
+  }
 
-    /* Selected Chip */
-    yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
-        background-color: #2563eb !important; /* Selected chip color */
-        box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important; /* Glow effect on selection */
-    }
+  /* Chip Hover Effect */
+  .ytChipShapeChip:hover {
+      background-color: #1d4ed8 !important; /* Hover color */
+      transform: scale(1.05);
+  }
 
-    /* Chip Hover Effect */
-    .ytChipShapeChip:hover {
-        background-color: #1d4ed8 !important; /* Hover color */
-        transform: scale(1.05);
-    }
+  /* Search Box */
+  #ytSearchboxComponentInputContainer {
+      background-color: #1a2335 !important; /* Search box background */
+      border-radius: 8px !important;
+      transition: box-shadow 0.3s ease;
+  }
 
-    /* Search Box */
-    #ytSearchboxComponentInputContainer {
-        background-color: #1a2335 !important; /* Search box background */
-        border-radius: 8px !important;
-        transition: box-shadow 0.3s ease;
-    }
+  /* Search box */
+  #ytSearchboxComponentInputContainer:focus-within {
+      box-shadow: 0 0 8px #2563eb !important; /* Focus glow color */
+  }
 
-    /* Search box */
-    #ytSearchboxComponentInputContainer:focus-within {
-        box-shadow: 0 0 8px #2563eb !important; /* Focus glow color */
-    }
+  /* Grid/Video Card*/
+  ytd-rich-item-renderer,
+  ytd-video-renderer,
+  ytd-grid-video-renderer {
+      border-radius: 8px; /* Rounded corners */
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.5s ease; /* Fade-in animation */
+  }
 
-    /* Grid/Video Card*/
-    ytd-rich-item-renderer,
-    ytd-video-renderer,
-    ytd-grid-video-renderer {
-        border-radius: 8px; /* Rounded corners */
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        animation: fadeIn 0.5s ease; /* Fade-in animation */
-    }
+  /* Video card hover effect */
+  ytd-rich-item-renderer:hover,
+  ytd-video-renderer:hover,
+  ytd-grid-video-renderer:hover {
+      transform: scale(1.03);
+      /* box-shadow: 0 0 12px rgba(37, 99, 235, 0.5); buggy */
+  }
 
-    /* Video card hover effect */
-    ytd-rich-item-renderer:hover,
-    ytd-video-renderer:hover,
-    ytd-grid-video-renderer:hover {
-        transform: scale(1.03);
-        /* box-shadow: 0 0 12px rgba(37, 99, 235, 0.5); buggy */
-    }
+  /* Hide Ads */
+  ytd-display-ad-renderer,
+  ytd-banner-promo-renderer,
+  ytd-promoted-sparkles-web-renderer,
+  ytd-compact-promoted-video-renderer {
+      display: none !important;
+  }
 
-    /* Hide Ads */
-    ytd-display-ad-renderer,
-    ytd-banner-promo-renderer,
-    ytd-promoted-sparkles-web-renderer,
-    ytd-compact-promoted-video-renderer {
-        display: none !important;
-    }
+  /* Animations */
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
 
-    /* Animations */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
+  @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+  }
 
-    @keyframes popIn {
-        0% { transform: scale(0.8); opacity: 0; }
-        100% { transform: scale(1); opacity: 1; }
-    }
-
-    /* Add more down here if you want (: */
+  /* Add more down here if you want (: */
 </style>
