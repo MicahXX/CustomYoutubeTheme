@@ -13,6 +13,12 @@
         background-color: #111a2b !important;
     }
 
+    yt-formatted-string[has-link-only_]:not([force-default-style])
+    a.yt-simple-endpoint.yt-formatted-string {
+        background-color: #0e1624 !important;
+        border: none;
+    }
+
     /* Page */
     #contents,
     #container,
