@@ -4,11 +4,13 @@ Use a tool that lets you inject custom CSS into websites, like [Requestly](https
 
 1. Create a **New Rule**, set **URL and set Contains**.  
 
-2. In the URL field, enter: `https://www.youtube.com/` and save settings.
+2. In the URL field, enter: `https://www.youtube.com/`
 
-3. Open/Reload Youtube.
+3. Paste the content from the theme file into the text field and save settings.
 
-4. And if you did everything correct Youtube should look different now.
+4. Open/Reload Youtube.
+
+5. And if you did everything correct Youtube should look different now.
 
 This is a basic theme example, you can tweak colors, add new styles, or completely redesign the layout to fit your own look. (:
 
