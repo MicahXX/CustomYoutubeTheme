@@ -1,46 +1,37 @@
 <style type="text/css">
-  html, body,
+  html,
+  body,
   ytd-mini-guide-renderer {
-      background-color: #0e1624 !important; /* Main background color (dark-blue). You can change this */
-      color: #e0e7ff !important; /* Main text color (light-blue). Change as you like */
-      font-family: 'Segoe UI', Roboto, sans-serif !important;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      animation: fadeIn 0.8s ease-in; /* Page fade-in animation */
+    background-color: #0e1624 !important; /* Color 1 - Change this if you want and also change all other C1 etc. too */
+    color: #e0e7ff !important;
+    font-family: 'Segoe UI', Roboto, sans-serif !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: fadeIn 0.8s ease-in;
   }
 
   ytd-app {
-      background-color: #111a2b !important;
+    background-color: #111a2b !important;
   }
 
   yt-formatted-string[has-link-only_]:not([force-default-style])
   a.yt-simple-endpoint.yt-formatted-string {
-      background-color: #0e1624 !important;
-      border: none;
+    background-color: #0e1624 !important; /* Color 1 */
+    border: none;
   }
 
-  /* Page */
+  /* =========================
+     Layout Containers
+  ========================== */
   #contents,
   #container,
   #sections,
   #secondary,
   #columns,
   #playlist-items {
-      background-color: #111a2b !important; /* Container background (dark-grayish-blue) */
-      box-shadow: none !important;
-      border-radius: 8px; /* Rounded corners */
-      transition: all 0.3s ease;
-  }
-
-  /* making small changes to improve looks */
-  #text-container {
-      background-color: #ffffff !important;
-  }
-
-  /* I think this looks good */
-  #secondary {
-      margin: 0 !important;
-      padding: 0 !important;
-      border-radius: 0 !important;
+    background-color: #111a2b !important; /* Color 2 */
+    box-shadow: none !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
 
   #container,
@@ -48,100 +39,114 @@
   #page-header,
   #tabs-inner-container,
   #header {
-      border-radius: 0 !important;
-      background-color: #111a2b !important;
+    background-color: #111a2b !important; /* Color 2 */
+    border-radius: 0 !important;
   }
 
   #sections {
-      border-radius: 0 !important;
-      background-color: #0e1624 !important; /* Looks good */
+    background-color: #0e1624 !important; /* Color 1 */
+    border-radius: 0 !important;
   }
 
   #playlist-items {
-      border-radius: 0 !important;
+    border-radius: 0 !important;
   }
 
-  /* Chips */
+  #secondary {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #text-container {
+    background-color: #ffffff !important;
+  }
+
+  /* =========================
+     Chips
+  ========================== */
   #chips {
-      padding-left: 1rem;
+    padding-left: 1rem;
   }
 
   #chips-content {
-      background-color: #0f172a !important; /* Chips background (slightly darker blue) */
-      padding: 4px 0 !important;
+    background-color: #0f172a !important; /* Color 3 */
+    padding: 4px 0 !important;
   }
 
-  /* Chips */
   .ytChipShapeChip {
-      border-radius: 8px !important;
-      padding: 6px 14px !important;
-      background-color: #1e3a8a !important; /* Default chip color (blue) */
-      color: #e0e7ff !important; /* Chip text color */
-      border: 1px solid #2563eb !important; /* Chip border color */
-      cursor: pointer;
-      transition: all 0.3s ease;
-      animation: popIn 0.5s ease; /* Pop-in animation */
+    border-radius: 8px !important;
+    padding: 6px 14px !important;
+    background-color: #1e3a8a !important; /* Color 4 */
+    color: #e0e7ff !important;
+    border: 1px solid #2563eb !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: popIn 0.5s ease;
   }
 
-  /* Selected Chip */
   yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
-      background-color: #2563eb !important; /* Selected chip color */
-      box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important; /* Glow effect on selection */
+    background-color: #2563eb !important; /* Color 5 */
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important;
   }
 
-  /* Chip Hover Effect */
   .ytChipShapeChip:hover {
-      background-color: #1d4ed8 !important; /* Hover color */
-      transform: scale(1.05);
+    background-color: #1d4ed8 !important; /* Color 6 */
+    transform: scale(1.05);
   }
 
-  /* Search Box */
+  /* =========================
+     Search Box
+  ========================== */
   #ytSearchboxComponentInputContainer {
-      background-color: #1a2335 !important; /* Search box background */
-      border-radius: 8px !important;
-      transition: box-shadow 0.3s ease;
+    background-color: #1a2335 !important; /* Color 7 */
+    border-radius: 8px !important;
+    transition: box-shadow 0.3s ease;
   }
 
-  /* Search box */
   #ytSearchboxComponentInputContainer:focus-within {
-      box-shadow: 0 0 8px #2563eb !important; /* Focus glow color */
+    box-shadow: 0 0 8px #2563eb !important;
   }
 
-  /* Grid/Video Card*/
+  /* =========================
+     Video Cards / Grid
+  ========================== */
   ytd-rich-item-renderer,
   ytd-video-renderer,
   ytd-grid-video-renderer {
-      border-radius: 8px; /* Rounded corners */
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 0.5s ease; /* Fade-in animation */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease;
   }
 
-  /* Video card hover effect */
   ytd-rich-item-renderer:hover,
   ytd-video-renderer:hover,
   ytd-grid-video-renderer:hover {
-      transform: scale(1.03);
-      /* box-shadow: 0 0 12px rgba(37, 99, 235, 0.5); buggy */
+    transform: scale(1.03);
   }
 
-  /* Hide Ads */
+  /* =========================
+     Hide Ads
+  ========================== */
   ytd-display-ad-renderer,
   ytd-banner-promo-renderer,
   ytd-promoted-sparkles-web-renderer,
   ytd-compact-promoted-video-renderer {
-      display: none !important;
+    display: none !important;
   }
 
-  /* Animations */
+  /* =========================
+     Animations
+  ========================== */
   @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 
   @keyframes popIn {
-      0% { transform: scale(0.8); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+    0%   { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1);   opacity: 1; }
   }
 
   /* Add more down here if you want (: */
