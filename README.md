@@ -14,4 +14,4 @@ Use a tool that lets you inject custom CSS into websites, like [Requestly](https
 
 This is a basic theme example, you can tweak colors, add new styles, or completely redesign the layout to fit your own look. (:
 
-PS: To modify the theme around the media-player you have to use roundabout methods from what I know.
+PS: To modify the theme around the media-player you have to use roundabout methods, since Youtube sets the color around to default again every time you load Youtube or just do any action on the browser.
