@@ -10,7 +10,7 @@
   }
 
   ytd-app {
-    background-color: #111a2b !important;
+    background-color: #111a2b !important; /* Color 2 */
   }
 
   yt-formatted-string[has-link-only_]:not([force-default-style])
