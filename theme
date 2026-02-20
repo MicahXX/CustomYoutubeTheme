@@ -17,7 +17,7 @@
 
   yt-formatted-string[has-link-only_]:not([force-default-style])
     a.yt-simple-endpoint.yt-formatted-string {
-    background-color: #000000 !important; /* Black - this is the color around the channel name of the creator on a vid */
+    background-color: #000000 !important; /* Black - this is the color around the channel name */
     border: none;
   }
 
