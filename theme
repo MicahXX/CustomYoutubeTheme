@@ -10,12 +10,12 @@
   }
 
   ytd-app {
-    background-color: #111a2b !important; /* Color 2 */
+    background-color: #111a2b !important;
   }
 
   yt-formatted-string[has-link-only_]:not([force-default-style])
   a.yt-simple-endpoint.yt-formatted-string {
-    background-color: #0e1624 !important; /* Color 1 */
+    background-color: #000000 !important; /* Black - this is the color around the channel name of the creator on a vid */
     border: none;
   }
 
