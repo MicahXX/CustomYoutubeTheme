@@ -12,4 +12,4 @@ Use a tool that lets you inject custom CSS into websites, like [Requestly](https
 
 This is a basic theme example, you can tweak colors, add new styles, or completely redesign the layout to fit your own look. (:
 
-Also to modify the theme around the media-player you have to use roundabout methods from what I know.
+PS: To modify the theme around the media-player you have to use roundabout methods from what I know.
