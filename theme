@@ -1,167 +1,188 @@
 <style type="text/css">
-  html,
-  body,
-  ytd-mini-guide-renderer {
-    background-color: #0e1624 !important; /* Color 1 - Change this if you want and also change all other C1 etc. too */
-    color: #e0e7ff !important;
-    font-family: "Segoe UI", Roboto, sans-serif !important;
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
-    animation: fadeIn 0.8s ease-in;
-  }
-
-  ytd-app {
-    background-color: #111a2b !important;
-  }
-
-  yt-formatted-string[has-link-only_]:not([force-default-style])
-    a.yt-simple-endpoint.yt-formatted-string {
-    background-color: #111a2b !important; /* Black - this is the color around the channel name of the creator on a vid */
-    border: none;
-  }
-
-  /* =========================
-     Layout Containers
-  ========================== */
-  #contents,
-  #container,
-  #sections,
-  #secondary,
-  #columns,
-  #playlist-items {
-    background-color: #111a2b !important; /* Color 2 */
-    box-shadow: none !important;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-
-  #container,
-  #page-header-banner,
-  #page-header,
-  #tabs-inner-container,
-  #header {
-    background-color: #111a2b !important; /* Color 2 */
-    border-radius: 0 !important;
-  }
-
-  #sections {
-    background-color: #0e1624 !important; /* Color 1 */
-    border-radius: 0 !important;
-  }
-
-  #playlist-items {
-    border-radius: 0 !important;
-  }
-
-  #secondary {
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-  }
-
-  #text-container {
-    background-color: #e0e7ff !important;
-  }
-
-  /* =========================
-     Chips
-  ========================== */
-  #chips {
-    padding-left: 1rem;
-  }
-
-  #chips-content {
-    background-color: #0f172a !important; /* Color 3 */
-    padding: 4px 0 !important;
-  }
-
-  .ytChipShapeChip {
-    border-radius: 8px !important;
-    padding: 6px 14px !important;
-    background-color: #1e3a8a !important; /* Color 4 */
-    color: #e0e7ff !important;
-    border: 1px solid #2563eb !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: popIn 0.5s ease;
-  }
-
-  yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
-    background-color: #2563eb !important; /* Color 5 */
-    box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important;
-  }
-
-  .ytChipShapeChip:hover {
-    background-color: #1d4ed8 !important; /* Color 6 */
-    transform: scale(1.05);
-  }
-
-  /* =========================
-     Search Box
-  ========================== */
-  #ytSearchboxComponentInputContainer {
-    background-color: #1a2335 !important; /* Color 7 */
-    border-radius: 8px !important;
-    transition: box-shadow 0.3s ease;
-  }
-
-  #ytSearchboxComponentInputContainer:focus-within {
-    box-shadow: 0 0 8px #2563eb !important;
-  }
-
-  /* =========================
-     Video Cards / Grid
-  ========================== */
-  ytd-rich-item-renderer,
-  ytd-video-renderer,
-  ytd-grid-video-renderer {
-    border-radius: 8px;
-    overflow: hidden;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-    animation: fadeIn 0.5s ease;
-  }
-
-  ytd-rich-item-renderer:hover,
-  ytd-video-renderer:hover,
-  ytd-grid-video-renderer:hover {
-    transform: scale(1.03);
-  }
-
-  /* =========================
-     Hide Ads
-  ========================== */
-  ytd-display-ad-renderer,
-  ytd-banner-promo-renderer,
-  ytd-promoted-sparkles-web-renderer,
-  ytd-compact-promoted-video-renderer {
-    display: none !important;
-  }
-
-  /* =========================
-     Animations
-  ========================== */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    html,
+    body,
+    ytd-mini-guide-renderer {
+        background-color: #0e1624 !important; /* Color 1 - Change this if you want and also change all other C1 etc. too */
+        color: #e0e7ff !important;
+        font-family: "Segoe UI", Roboto, sans-serif !important;
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+        animation: fadeIn 0.8s ease-in;
     }
-    to {
-      opacity: 1;
-    }
-  }
 
-  @keyframes popIn {
-    0% {
-      transform: scale(0.8);
-      opacity: 0;
+    ytd-app {
+        background-color: #111a2b !important;
     }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
 
-  /* Add more down here if you want (: */
+    yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string {
+        background-color: transparent !important; /* this is the color around the channel name of the creator on a vid */
+        border: none;
+    }
+
+    /* =========================
+   Layout Containers
+   ========================== */
+    #contents,
+    #container,
+    #sections,
+    #secondary,
+    #columns,
+    #playlist-items {
+        background-color: #111a2b !important; /* Color 2 */
+        box-shadow: none !important;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    #container,
+    #page-header-banner,
+    #page-header,
+    #tabs-inner-container,
+    #header {
+        background-color: #111a2b !important; /* Color 2 */
+        border-radius: 0 !important;
+    }
+
+    #sections {
+        background-color: #0e1624 !important; /* Color 1 */
+        border-radius: 0 !important;
+    }
+
+    #playlist-items {
+        border-radius: 0 !important;
+    }
+
+    #secondary {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    /* =========================
+   Chips
+   ========================== */
+    #chips {
+        padding-left: 1rem;
+    }
+
+    #chips-content {
+        background-color: #0f172a !important; /* Color 3 */
+        padding: 4px 0 !important;
+    }
+
+    .ytChipShapeChip {
+        border-radius: 8px !important;
+        padding: 6px 14px !important;
+        background-color: #1e3a8a !important; /* Color 4 */
+        color: #e0e7ff !important;
+        border: 1px solid #2563eb !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: popIn 0.5s ease;
+    }
+
+    yt-chip-cloud-chip-renderer[selected] .ytChipShapeChip {
+        background-color: #2563eb !important; /* Color 5 */
+        box-shadow: 0 0 6px rgba(37, 99, 235, 0.6) !important;
+    }
+
+    .ytChipShapeChip:hover {
+        background-color: #1d4ed8 !important; /* Color 6 */
+        transform: scale(1.05);
+    }
+
+    /* =========================
+   Search Box
+   ========================== */
+    #ytSearchboxComponentInputContainer {
+        background-color: #1a2335 !important; /* Color 7 */
+        border-radius: 8px !important;
+        transition: box-shadow 0.3s ease;
+    }
+
+    #ytSearchboxComponentInputContainer:focus-within {
+        box-shadow: 0 0 8px #2563eb !important;
+    }
+
+    /* =========================
+   Video Cards / Grid
+   ========================== */
+    ytd-rich-item-renderer,
+    ytd-video-renderer,
+    ytd-grid-video-renderer {
+        border-radius: 8px;
+        overflow: hidden;
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+        animation: fadeIn 0.5s ease;
+    }
+
+    ytd-rich-item-renderer:hover,
+    ytd-video-renderer:hover,
+    ytd-grid-video-renderer:hover {
+        transform: scale(1.03);
+    }
+
+    /* =========================
+   Hide Ads
+   ========================== */
+    ytd-display-ad-renderer,
+    ytd-banner-promo-renderer,
+    ytd-promoted-sparkles-web-renderer,
+    ytd-compact-promoted-video-renderer {
+        display: none !important;
+    }
+
+    /* =========================
+   Animations
+   ========================== */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes popIn {
+        0% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Remove weird background box behind channel names */
+    a.yt-simple-endpoint.yt-formatted-string,
+    ytd-channel-name a,
+    ytd-comment-renderer #author-text,
+    ytd-comment-renderer a#author-text,
+    ytd-video-owner-renderer a {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    /* Fix channel name color */
+    ytd-channel-name,
+    ytd-channel-name a,
+    #author-text,
+    #author-text span {
+        color: #e0e7ff !important;
+        font-weight: 500;
+    }
+
+    ytd-comment-renderer #author-text.yt-formatted-string {
+        background: transparent !important;
+    }
+
+    /* Add more down here if you want (: */
+
 </style>
